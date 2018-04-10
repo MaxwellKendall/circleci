@@ -14,7 +14,7 @@ jobs:
           command: rm -rf .git && rm -rf .gitignore && rm -rf .circleci
       - run:
           name: deploy to S3
-          command: aws s3 sync . s3://ermahgerd --region us-east-1 --acl public-read
+          command: aws s3 sync . s3://circlecli --region us-east-1 --acl public-read
 workflows:
   version: 2
   deploy:
